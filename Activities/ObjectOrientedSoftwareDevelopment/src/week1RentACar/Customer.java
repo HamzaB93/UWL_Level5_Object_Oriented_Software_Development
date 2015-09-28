@@ -12,7 +12,6 @@ public class Customer
 	private int age;
 	private boolean member;
 	
-	private Object bmw3;
 	////////// Constructors //////////
 	
 	// Default constructor
@@ -37,10 +36,4 @@ public class Customer
 		return ("Name: " + name + ", Age: " + age + "Member: " + member + "\n");
 	}
 	
-	public boolean checkAvailability(Object vehicle)
-	{
-
-		bmw3.getAvailabilty();
-		return available;
-	}
 }

@@ -24,21 +24,6 @@ public class RentACar {
 		rrPhantom.setAvailability(true);
 		isAvailable = rrPhantom.getAvailability();
 		System.out.println("Is Rolls Royce Phantom available ? : " + isAvailable + "\n" );
-		
-		// Construct customer
-		Customer hamza = new Customer();
-		
-		// Calling method to check if the rrPhantom is available. At this point should say true! 
-		boolean checkCar = hamza.checkAvailability(rrPhantom);
-		
-		System.out.println("Cusomter is checking RR Phantom availability.\nIs the car available ? : " + checkCar);
-		
-		// Checking availability of bmw3, should be false
-		
-		checkCar = hamza.checkAvailability(bmw3);
-		
-		System.out.println("Cusomter is checking BMW 3 Series availability.\nIs the car available ? : " + checkCar);
-
-		
+	
 	}
 }
