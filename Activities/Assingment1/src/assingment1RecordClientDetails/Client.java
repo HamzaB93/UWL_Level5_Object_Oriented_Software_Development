@@ -36,15 +36,8 @@ public class Client
 	}
 	
 	////////// toStrings //////////
-	// Without an associatedContact
+	// Will give null value for associatedContact if its not present
 	public String toString()
-	{
-		return ("Client details:\n Client ID: " + id + ", Company Name: " + companyName +", Address: " + address +
-				", Email: " + email);
-	}
-	
-	// With an associatedContact
-	public String toString2()
 	{
 		return ("Client details:\n Client ID: " + id + ", Company Name: " + companyName +", Address: " + address +
 				", Email: " + email + ", BluePoint associated staff: " + associatedContact);

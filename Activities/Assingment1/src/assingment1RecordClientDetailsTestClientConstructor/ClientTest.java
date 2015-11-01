@@ -17,6 +17,7 @@ public class ClientTest
 		
 		BpStaff bp = new BpStaff();
 		Client client2 = new Client(compName, address, email, bp);
-		System.out.println("Test2\n" + client2.toString2());
+		System.out.println("\nTest2\n" + client2.toString2());
+
 	}
 }
