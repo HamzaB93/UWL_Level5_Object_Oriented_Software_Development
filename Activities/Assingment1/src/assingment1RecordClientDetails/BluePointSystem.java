@@ -13,30 +13,33 @@ public class BluePointSystem
 	
 	
 	////////// RECORD CLIENT DETAILS //////////
-	public boolean recordClientDetails(String companyName, ClientAddress address, String email)
+	public void recordClientDetails(String companyName, ClientAddress address, String email)
 	{
 		Client cl;
+		boolean found = false;
 		
 		// Check Staff availability
 		
-		for (BpStaff temp : staff) {
-			
-			if (temp.isAvailable()) {
-				cl = new Client (companyName, address, email, temp);
+		for (int i = 0; i < staff.size(); i++) 
+		{
+			if (staff.get(i).isAvailable()) 
+			{
+				cl = new Client (companyName, address, email, staff.get(i));
 				addClient(cl);
 				System.out.println("Congratulations, your details have been saved in our system");
-				System.out.println("Your contact person is " + temp.getNameOfStaff());
-				return true;
+				System.out.println("Your contact person is " + staff.get(i).getNameOfStaff());
+				found = true;
 			}
-			
 		}
 		
-		cl = new Client (companyName, address, email);
-		addClient(cl);
-		System.out.println("Congratulations, your details have been saved in our system");
-		System.out.println("Currently we have no staff available to handle you."
-		+" You will be assigned one later.");	
-		return false;
+		if (found == false) 
+		{
+			cl = new Client (companyName, address, email);
+			addClient(cl);
+			System.out.println("Congratulations, your details have been saved in our system");
+			System.out.println("Currently we have no staff available to handle you."
+			+" You will be assigned one later.");
+		}
 	}
 	
 	
