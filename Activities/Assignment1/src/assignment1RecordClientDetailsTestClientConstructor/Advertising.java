@@ -1,4 +1,4 @@
-package assingment1RecordClientDetailsTestInheritance;
+package assignment1RecordClientDetailsTestClientConstructor;
 
 //Inheritance - A subclass of BpStaff
 public class Advertising extends BpStaff
@@ -13,7 +13,7 @@ public class Advertising extends BpStaff
 	// Default
 	public Advertising()
 	{
-		nameOfStaff = "John Doe";
+		nameOfStaff = "Jane Doe";
 		jobDescription = "Advertising";
 		available = false;
 	}

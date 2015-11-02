@@ -1,8 +1,8 @@
-package assingment1RecordClientDetails;
+package assignment1RecordClientDetails;
 
 import java.util.ArrayList;
 
-public class BluePointSystem 
+public class BusyPointSystem 
 {
 	////////// Properties //////////
 	
@@ -46,7 +46,7 @@ public class BluePointSystem
 	////////// Constructor //////////
 	
 	// Creating the ArrayList for staff and clients
-	public BluePointSystem()
+	public BusyPointSystem()
 	{
 		staff = new ArrayList<BpStaff>();
 		clients = new ArrayList<Client>();

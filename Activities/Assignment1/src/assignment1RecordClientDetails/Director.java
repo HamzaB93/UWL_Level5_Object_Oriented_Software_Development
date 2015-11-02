@@ -1,7 +1,7 @@
-package assingment1RecordClientDetails;
+package assignment1RecordClientDetails;
 
 //Inheritance - A subclass of BpStaff
-public class Advertising extends BpStaff
+public class Director extends BpStaff
 {
 	////////// Properties //////////
 	private String nameOfStaff;
@@ -11,15 +11,15 @@ public class Advertising extends BpStaff
 	////////// Constructors //////////
 	
 	// Default
-	public Advertising()
+	public Director()
 	{
 		nameOfStaff = "John Doe";
-		jobDescription = "Advertising";
+		jobDescription = "Director";
 		available = false;
 	}
 	
 	// Parameterised
-	public Advertising(String nameOfStaff, String jobDescription, boolean available )
+	public Director(String nameOfStaff, String jobDescription, boolean available )
 	{
 		this.nameOfStaff = nameOfStaff;
 		this.jobDescription = jobDescription;

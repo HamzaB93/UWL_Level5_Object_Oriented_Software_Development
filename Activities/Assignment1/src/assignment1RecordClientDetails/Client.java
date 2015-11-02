@@ -1,4 +1,4 @@
-package assingment1RecordClientDetails;
+package assignment1RecordClientDetails;
 
 public class Client 
 {

@@ -1,6 +1,6 @@
-package assingment1RecordClientDetailsTestInheritance;
+package assignment1RecordClientDetailsTestInheritance;
 
-public class BpStaff 
+public class Director extends BpStaff
 {
 	////////// Properties //////////
 	private String nameOfStaff;
@@ -9,16 +9,16 @@ public class BpStaff
 	
 	////////// Constructors //////////
 	
-	// Default - Creating an object with predefined values
-	public BpStaff()
+	// Default
+	public Director()
 	{
 		nameOfStaff = "John Doe";
-		jobDescription = "Blue Point Staff Member";
+		jobDescription = "Director";
 		available = false;
 	}
 	
-	// Parameterised - Creating an object with user defined values for the object properties
-	public BpStaff(String nameOfStaff, String jobDescription, boolean available )
+	// Parameterised
+	public Director(String nameOfStaff, String jobDescription, boolean available )
 	{
 		this.nameOfStaff = nameOfStaff;
 		this.jobDescription = jobDescription;
@@ -26,8 +26,6 @@ public class BpStaff
 	}
 	
 	////////// toString //////////
-	
-	// Will give a string representation of the object
 	public String toString()
 	{
 		return("Staff Details:\nName of Staff: " + nameOfStaff + ", Job Description: " + jobDescription
@@ -36,7 +34,7 @@ public class BpStaff
 	
 	////////// Getters and Setters //////////
 	
-	// Getters - Getting the values of the properties
+	// Getters
 	public String getNameOfStaff() 
 	{
 		return nameOfStaff;
@@ -52,7 +50,7 @@ public class BpStaff
 		return available;
 	}
 	
-	// Setters - Setting a different value for the object properties
+	// Setters
 	public void setNameOfStaff(String nameOfStaff) 
 	{
 		this.nameOfStaff = nameOfStaff;

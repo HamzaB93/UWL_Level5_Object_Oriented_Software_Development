@@ -1,7 +1,6 @@
-package assingment1RecordClientDetailsTestClientConstructor;
+package assignment1RecordClientDetails;
 
-//Inheritance - A subclass of BpStaff
-public class Advertising extends BpStaff
+public class BpStaff 
 {
 	////////// Properties //////////
 	private String nameOfStaff;
@@ -10,16 +9,16 @@ public class Advertising extends BpStaff
 	
 	////////// Constructors //////////
 	
-	// Default
-	public Advertising()
+	// Default - Creating an object with predefined values
+	public BpStaff()
 	{
-		nameOfStaff = "Jane Doe";
-		jobDescription = "Advertising";
+		nameOfStaff = "John Doe";
+		jobDescription = "Blue Point Staff Member";
 		available = false;
 	}
 	
-	// Parameterised
-	public Advertising(String nameOfStaff, String jobDescription, boolean available )
+	// Parameterised - Creating an object with user defined values for the object properties
+	public BpStaff(String nameOfStaff, String jobDescription, boolean available )
 	{
 		this.nameOfStaff = nameOfStaff;
 		this.jobDescription = jobDescription;
@@ -37,7 +36,7 @@ public class Advertising extends BpStaff
 	
 	////////// Getters and Setters //////////
 	
-	// Getters
+	// Getters - Getting the values of the properties
 	public String getNameOfStaff() 
 	{
 		return nameOfStaff;
@@ -53,7 +52,7 @@ public class Advertising extends BpStaff
 		return available;
 	}
 	
-	// Setters
+	// Setters - Setting a different value for the object properties
 	public void setNameOfStaff(String nameOfStaff) 
 	{
 		this.nameOfStaff = nameOfStaff;

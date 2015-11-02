@@ -1,4 +1,4 @@
-package assingment1RecordClientDetailsTestClientConstructor;
+package assignment1RecordClientDetailsTestClientConstructor;
 
 public class ClientTest 
 {

@@ -1,6 +1,7 @@
-package assingment1RecordClientDetailsTestInheritance;
+package assignment1RecordClientDetailsTestInheritance;
 
-public class Director extends BpStaff
+//Inheritance - A subclass of BpStaff
+public class Advertising extends BpStaff
 {
 	////////// Properties //////////
 	private String nameOfStaff;
@@ -10,15 +11,15 @@ public class Director extends BpStaff
 	////////// Constructors //////////
 	
 	// Default
-	public Director()
+	public Advertising()
 	{
 		nameOfStaff = "John Doe";
-		jobDescription = "Director";
+		jobDescription = "Advertising";
 		available = false;
 	}
 	
 	// Parameterised
-	public Director(String nameOfStaff, String jobDescription, boolean available )
+	public Advertising(String nameOfStaff, String jobDescription, boolean available )
 	{
 		this.nameOfStaff = nameOfStaff;
 		this.jobDescription = jobDescription;
@@ -26,6 +27,8 @@ public class Director extends BpStaff
 	}
 	
 	////////// toString //////////
+	
+	// Will give a string representation of the object
 	public String toString()
 	{
 		return("Staff Details:\nName of Staff: " + nameOfStaff + ", Job Description: " + jobDescription

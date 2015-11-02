@@ -1,8 +1,8 @@
-package assingment1RecordClientDetailsTestInheritance;
+package assignment1RecordClientDetailsTestInheritance;
 
 import java.util.ArrayList;
 
-import assingment1RecordClientDetails.BpStaff;
+import assignment1RecordClientDetails.BpStaff;
 
 public class BpStaffList 
 {

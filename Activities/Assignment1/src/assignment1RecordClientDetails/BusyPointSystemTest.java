@@ -1,11 +1,11 @@
-package assingment1RecordClientDetails;
+package assignment1RecordClientDetails;
 
-public class BluePointSystemTest 
+public class BusyPointSystemTest 
 {
 	public static void main(String[] args) 
 	{
 		// Making the system
-		BluePointSystem bpSys = new BluePointSystem();
+		BusyPointSystem bpSys = new BusyPointSystem();
 		
 		// Making staff
 		String b1NameOfStaff = "Peter Dood";

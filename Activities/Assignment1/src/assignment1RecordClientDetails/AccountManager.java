@@ -1,5 +1,6 @@
-package assingment1RecordClientDetailsTestInheritance;
+package assignment1RecordClientDetails;
 
+// Inheritance - A subclass of BpStaff
 public class AccountManager extends BpStaff
 {
 	////////// Properties //////////
@@ -26,6 +27,8 @@ public class AccountManager extends BpStaff
 	}
 	
 	////////// toString //////////
+	
+	// Will give a string representation of the object
 	public String toString()
 	{
 		return("Staff Details:\nName of Staff: " + nameOfStaff + ", Job Description: " + jobDescription

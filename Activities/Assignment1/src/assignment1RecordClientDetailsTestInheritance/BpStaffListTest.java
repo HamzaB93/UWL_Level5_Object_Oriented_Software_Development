@@ -1,8 +1,8 @@
-package assingment1RecordClientDetailsTestInheritance;
+package assignment1RecordClientDetailsTestInheritance;
 
-import assingment1RecordClientDetails.AccountManager;
-import assingment1RecordClientDetails.Advertising;
-import assingment1RecordClientDetails.Director;
+import assignment1RecordClientDetails.AccountManager;
+import assignment1RecordClientDetails.Advertising;
+import assignment1RecordClientDetails.Director;
 
 public class BpStaffListTest {
 
