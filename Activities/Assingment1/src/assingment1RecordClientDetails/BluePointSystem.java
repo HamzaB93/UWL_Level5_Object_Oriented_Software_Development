@@ -11,6 +11,35 @@ public class BluePointSystem
 	// Array of clients
 	private ArrayList<Client>clients;
 	
+	
+	////////// RECORD CLIENT DETAILS //////////
+	public boolean recordClientDetails(String companyName, ClientAddress address, String email)
+	{
+		Client cl;
+		
+		// Check Staff availability
+		
+		for (BpStaff temp : staff) {
+			
+			if (temp.isAvailable()) {
+				cl = new Client (companyName, address, email, temp);
+				addClient(cl);
+				System.out.println("Congratulations, your details have been saved in our system");
+				System.out.println("Your contact person is " + temp.getNameOfStaff());
+				return true;
+			}
+			
+		}
+		
+		cl = new Client (companyName, address, email);
+		addClient(cl);
+		System.out.println("Congratulations, your details have been saved in our system");
+		System.out.println("Currently we have no staff available to handle you."
+		+" You will be assigned one later.");	
+		return false;
+	}
+	
+	
 	////////// Constructor //////////
 	
 	// Creating the ArrayList for staff and clients
