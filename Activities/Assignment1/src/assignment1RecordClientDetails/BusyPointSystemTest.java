@@ -15,14 +15,14 @@ public class BusyPointSystemTest
 		
 		String b2NameOfStaff = "John Dood";
 		String b2JobDescription = "Advertising";
-		boolean b2Available = false;
+		boolean b2Available = true;
 		BpStaff b2 = new Advertising(b2NameOfStaff, b2JobDescription, b2Available );
 		
-		BpStaff b3 = new BpStaff();
-		
+		BpStaff b3 = new AccountManager("Bob Bro", "Account Manager", true);
 		// Adding staff to list
 		bpSys.addStaff(b1);
-		bpSys.addStaff(b2);		
+		bpSys.addStaff(b2);	
+		bpSys.addStaff(b3);
 		
 		
 		//////////// Starting recordClientDetails //////////

@@ -10,7 +10,7 @@ public class Director extends BpStaff
 	
 	////////// Constructors //////////
 	
-	// Default
+	// Default - Creating an object with predefined values
 	public Director()
 	{
 		nameOfStaff = "John Doe";
@@ -18,7 +18,7 @@ public class Director extends BpStaff
 		available = false;
 	}
 	
-	// Parameterised
+	// Parameterised - Creating an object with user defined values for the object properties
 	public Director(String nameOfStaff, String jobDescription, boolean available )
 	{
 		this.nameOfStaff = nameOfStaff;
@@ -31,7 +31,7 @@ public class Director extends BpStaff
 	// Will give a string representation of the object
 	public String toString()
 	{
-		return("Staff Details:\nName of Staff: " + nameOfStaff + ", Job Description: " + jobDescription
+		return("Name of Staff: " + nameOfStaff + ", Job Description: " + jobDescription
 				+ ", Availability: " + available);
 	}
 	

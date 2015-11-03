@@ -12,6 +12,8 @@ public class Client
 
 	////////// Constructors //////////
 
+	// NOTE: These constructors are to be used in the recordClientDetails method in BpSystem class
+	
 	// Parameterised
 	// When BpStaff is unavailable
 	public Client(String companyName, ClientAddress address, String email)
@@ -36,12 +38,15 @@ public class Client
 	}
 	
 	////////// toStrings //////////
+	
+	// Gives a string representation to constructed objects
 	// Will give null value for associatedContact if its not present
 	public String toString()
 	{
 		return ("Client details:\n Client ID: " + id + ", Company Name: " + companyName +", Address: " + address +
 				", Email: " + email + ", BluePoint associated staff: " + associatedContact);
 	}
+	
 	////////// Getters and Setters //////////
 	
 	// Getters
