@@ -18,7 +18,9 @@ public class Client
 	// When BpStaff is unavailable
 	public Client(String companyName, ClientAddress address, String email)
 	{
+		// The id will be the value of baseId, baseId will then be incremented
 		id = baseId;
+		// Is static so objects of this type will all be able use this value
 		baseId++;
 		this.companyName = companyName;
 		this.address = address;
@@ -43,8 +45,8 @@ public class Client
 	// Will give null value for associatedContact if its not present
 	public String toString()
 	{
-		return ("Client details:\n Client ID: " + id + ", Company Name: " + companyName +", Address: " + address +
-				", Email: " + email + ", BluePoint associated staff: " + associatedContact);
+		return ("Client ID: " + id + ", Company Name: " + companyName +", Address: " + address +
+				", Email: " + email + "\n BluePoint associated staff: " + associatedContact);
 	}
 	
 	////////// Getters and Setters //////////

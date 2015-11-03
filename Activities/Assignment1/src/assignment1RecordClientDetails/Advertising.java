@@ -31,7 +31,7 @@ public class Advertising extends BpStaff
 	// Will give a string representation of the object
 	public String toString()
 	{
-		return("Staff Details:\nName of Staff: " + nameOfStaff + ", Job Description: " + jobDescription
+		return("Name of Staff: " + nameOfStaff + ", Job Description: " + jobDescription
 				+ ", Availability: " + available);
 	}
 	
