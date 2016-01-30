@@ -1,0 +1,31 @@
+package assignment;
+
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+import java.util.Scanner;
+
+public class Client 
+{
+	private Client() {}
+	
+	public static void main (String[] args)
+	{
+		// Reference to host name
+		String host = "localHost";
+		
+		try {
+			// Locate the registry for the localHost
+			Registry registry = LocateRegistry.getRegistry(host);
+			// Reference and lookup the registry with appropriate names
+			UniInterface stub = (UniInterface) registry.lookup("Uni");
+			
+			stub.makeUni();
+
+		}
+		catch (Exception e)
+		{
+			System.out.println("Client exception: " + e.toString());
+			e.printStackTrace();
+		}
+	}
+}

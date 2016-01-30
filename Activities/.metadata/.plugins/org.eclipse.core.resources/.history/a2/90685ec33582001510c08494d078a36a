@@ -1,0 +1,27 @@
+package assignment1RecordClientDetails;
+
+public class BusyPointSystemTest 
+{
+	public static void main(String[] args) 
+	{
+		/*
+		 * THIS IS A TEST CLASS.
+		 * IT TESTS THE USE OF THE RECORDCLIENTDETAILS METHOD
+		 */
+		
+		// First the BusyPoint object must be constructed
+		/*
+		 * When it is constructed, two arrayLists will also be constructed.
+		 * One will contain BpStaff objects called staff.
+		 * Another will contain Client objects called clients
+		 */
+		BusyPointSystem bpSystem = new BusyPointSystem();
+		
+		// Making different staff of type BpStaff
+		/*
+		 * The attributes are String nameOfStaff, String jobDescription and boolean available.
+		 * Because of inheritance AccountManager, Advertising and directors inherit BpStaff methods
+		 */
+		
+	}
+}

@@ -1,0 +1,10 @@
+1445099667308	Encapsulate field 'id'
+1445099671874	Encapsulate field 'caravanName'
+1445099679679	Encapsulate field 'timesRented'
+1445099685250	Encapsulate field 'dateProvided'
+1445111322442	Delete element
+1445111970176	Encapsulate field 'available'
+1445112456807	Encapsulate field 'bookedCaravan'
+1445112460685	Encapsulate field 'customerId'
+1445112984441	Rename type 'Booking'
+1445174920769	Encapsulate field 'name'

@@ -1,0 +1,17 @@
+package week2Aggregation;
+
+public class Address 
+{
+	////////// Properties //////////
+	
+	private int houseNum;
+	private String roadName;
+	private String city;
+	private String postCode;
+	
+	////////// Constructors //////////
+	public Address()
+	{
+		houseNum = 
+	}
+}

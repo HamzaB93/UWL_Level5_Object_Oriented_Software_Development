@@ -1,0 +1,9 @@
+package assignment1RecordClientDetails;
+
+public class BusyPointSystemTest 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

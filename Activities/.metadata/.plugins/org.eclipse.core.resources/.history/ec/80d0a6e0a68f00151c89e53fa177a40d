@@ -1,0 +1,9 @@
+package assignment;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+public interface SchoolInterface 
+{
+	String test() throws RemoteException;
+}

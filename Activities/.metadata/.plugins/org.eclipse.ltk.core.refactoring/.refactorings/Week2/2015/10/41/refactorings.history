@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;week2Composition.Member.owner&apos; in &apos;week2Composition.Member&apos;&#x0A;- Original project: &apos;Week2&apos;&#x0A;- Original element: &apos;week2Composition.Member.owner&apos;&#x0A;- Getter method name: &apos;getOwner&apos;&#x0A;- Setter method name: &apos;setOwner&apos;&#x0A;- Field visibility: &apos;public&apos;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;owner&apos;" flags="589830" getter="getOwner" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;week2Composition{Member.java[Member^owner" insertion="9" setter="setOwner" stamp="1444052154375" version="1.0" visibility="1"/>
+</session>

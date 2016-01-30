@@ -6,12 +6,12 @@ public class BusyPointSystemTest
 	{
 		/*
 		 * THIS IS A TEST CLASS.
-		 * IT TESTS THE USE OF THE RECORDCLIENTDETAILS METHOD
+		 * IT TESTS THE USE OF THE RECORDCLIENTDETAILS METHODS
 		 */
 		
 		// First the BusyPoint object must be constructed
 		/*
-		 * When it is constructed, two arrayLists will also be constructed.
+		 * When it is constructed, two ArrayLists will also be constructed.
 		 * One will contain BpStaff objects called staff.
 		 * Another will contain Client objects called clients
 		 */
@@ -27,13 +27,13 @@ public class BusyPointSystemTest
 		BpStaff b3 = new Advertising("David Spademan", "Advertising", true);
 		BpStaff b4 = new Director("Eva Brown", "Director", false);
 		
-		// Adding BpStaff objects to staff arrayList
+		// Adding BpStaff objects to staff ArrayList
 		bpSystem.addStaff(b1);
 		bpSystem.addStaff(b2);
 		bpSystem.addStaff(b3);
 		bpSystem.addStaff(b4);
 		
-		// Proof that the objects have been added to the arrayList
+		// Proof that the objects have been added to the ArrayList
 		bpSystem.printStaffList();
 		System.out.println("");
 		
@@ -73,8 +73,6 @@ public class BusyPointSystemTest
 		System.out.println("");
 		
 		// Showing that all Client objects have been added to the clients arrayList
-		bpSystem.printClients();
-		
-		
+		bpSystem.printClients();		
 	}
 }

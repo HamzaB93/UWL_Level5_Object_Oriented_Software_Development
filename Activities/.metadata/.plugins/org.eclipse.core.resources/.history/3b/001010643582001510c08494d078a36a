@@ -1,0 +1,12 @@
+package assignment1RecordClientDetails;
+
+public class BusyPointSystemTest 
+{
+	public static void main(String[] args) 
+	{
+		/*
+		 * THIS IS A TEST CLASS.
+		 * IT TESTS THE USE OF THE RECORDCLIENTDETAILS METHOD
+		 */
+	}
+}

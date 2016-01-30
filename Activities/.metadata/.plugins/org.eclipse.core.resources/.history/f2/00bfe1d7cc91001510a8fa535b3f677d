@@ -1,0 +1,21 @@
+package assignment;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+import java.util.ArrayList;
+
+public interface UniInterface extends Remote
+{
+	// For client to make a University object
+	void makeUni() throws RemoteException;
+	
+    // For client to add a student
+    String addAStudent(String name, int age, String course) throws RemoteException;
+
+    // For client to find a student
+    String findAStudent(int id) throws RemoteException;
+
+    // For client to print out the students
+    ArrayList<Student> printOutStudents() throws RemoteException;
+    
+}

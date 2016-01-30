@@ -1,0 +1,12 @@
+package lkProvisionalBooking;
+
+import java.util.Date;
+
+public class Caravan 
+{
+	// Properties
+	private String caravanName;
+	private int timesRented;
+	private String currentLocation;
+	private Date dateProvided;
+}

@@ -1,0 +1,28 @@
+package week2Aggregation;
+
+import java.util.Date;
+
+public class MemberTest 
+{
+	public static void main(String[] args) 
+	{
+		// Construct an Address
+		//Address ad = new Address();
+		
+		// Construct a default member
+		Member mem = new Member();
+		
+		// getting name
+		String name = mem.getName();
+		System.out.println("Member name: " + name);
+		
+		// getting dateCreated
+		Date date = mem.getDateCreated();
+		System.out.println("Date created: " + date);
+
+		// getting address
+		Address address = mem.getMainAddress();
+		System.out.println("Address: " + address);
+	}
+
+}

@@ -1,0 +1,19 @@
+package week2Aggregation;
+
+public class MemberTest 
+{
+	public static void main(String[] args) 
+	{
+		// Construct an Address
+		Address ad = new Address();
+		
+		// Construct a default member
+		Member mem = new Member();
+		
+		//getting name
+		String name = mem.getName();
+		
+		System.out.println("Member name: " + name);
+	}
+
+}

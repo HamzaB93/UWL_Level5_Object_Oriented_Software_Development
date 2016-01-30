@@ -1,0 +1,25 @@
+package week2Aggregation;
+
+import java.util.Date;
+
+public class Member 
+{
+	////////// Properties //////////
+	
+	private long id;
+	private String name;
+	private Date dateCreated;
+	// Association, reflexive 
+	Member Supervisor;
+	
+	
+	////////// Constructors //////////
+	
+	// Default constructor
+	public Member()
+	{
+		
+	}
+	
+	
+}

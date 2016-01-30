@@ -1,0 +1,101 @@
+package week5LabelWithGraphic;
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.control.ContentDisplay;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.shape.Ellipse;
+
+// Extends inheritance, Application will have methods which will be used in hierarchy
+public class LabelWithGraphic extends Application 
+{
+	// Override the start method in the superType
+	// Application class is a superType
+	@Override
+	public void start(Stage primaryStage) 
+	{
+		// First Label!!
+		
+		// Creating an instance of a Label
+		// This label will be a circle
+		Label lb1 = new Label("Circle", new Circle(50,50,25));
+		
+		// setContentDisplay allows the properties of the circle to change
+		// Want the circle to be displayed at the top
+		lb1.setContentDisplay(ContentDisplay.TOP);
+		
+		// setTextfill of the Circle label
+		lb1.setTextFill(Color.BLUE);
+		
+		
+		// Second Label!!
+		
+		// Label, new Rectangle and setting its position
+		Label lb2 = new Label("Rectangle", new Rectangle(50, 50, 100, 25));
+		lb2.setContentDisplay(ContentDisplay.RIGHT);
+		
+		
+		// Third Label!!
+		Label lb3 = new Label("Ellipse", new Ellipse(50, 50, 50, 25));
+		lb3.setContentDisplay(ContentDisplay.LEFT);
+	
+		
+		// Fourth Label!!
+		
+		// Making another Ellipse object
+		Ellipse ellipse = new Ellipse(50, 50, 100, 25);
+		
+		// Now has colour options
+		ellipse.setStroke(Color.GREEN);
+		ellipse.setFill(Color.WHITE);
+		
+		StackPane stackPane = new StackPane();
+		stackPane.getChildren().addAll(ellipse, new Label("JavaFX"));
+		
+		Label lb4 = new Label("A pane inside a label", stackPane);
+		lb4.setContentDisplay(ContentDisplay.BOTTOM);
+		
+		
+		
+		// HBOX!!
+		
+		// is a panel to contain the label
+		// pretty much a box
+		// new HBox() contains how many elements the box can contain
+		HBox myPanel = new HBox(30);
+		
+		// With the HBox object called myPanel.reference a list/array of components.add the component
+		myPanel.getChildren().addAll(lb1, lb2, lb3, lb4);
+		
+		// Scene!!
+		
+		// Make a scene
+		// Allows us to display the HBox panel
+		// length then height
+		Scene scene = new Scene(myPanel, 450,150);
+		
+		// Now place the scene in a stage
+		// Setting stage title
+		primaryStage.setTitle("Testing Labels");
+		
+		// Setting up which scene to use
+		primaryStage.setScene(scene);
+		
+		// Show the scene
+		primaryStage.show();
+	}
+	
+	// The main method to launch the application
+	public static void main(String[] args) 
+	{
+		launch(args);
+	}
+}

@@ -1,0 +1,12 @@
+1443444269784	Encapsulate field 'annualInterestRate'
+1443444299663	Encapsulate field 'numberOfYears'
+1443444317794	Encapsulate field 'loanAmount'
+1443444324164	Encapsulate field 'loanDate'
+1443451196390	Move compilation unit
+1443451236165	Move compilation unit
+1443451269279	Rename type 'week2Composition'
+1443452835004	Encapsulate field 'id'
+1443452840514	Encapsulate field 'name'
+1443452844837	Encapsulate field 'dateCreated'
+1443455982729	Encapsulate field 'Supervisor'
+1443535386262	Move packages

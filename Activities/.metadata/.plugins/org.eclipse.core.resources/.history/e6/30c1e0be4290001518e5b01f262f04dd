@@ -1,0 +1,37 @@
+package assignment;
+
+import java.util.ArrayList;
+
+public class University
+{
+	// Properties
+	ArrayList<Student> uni;
+
+	// Constructor
+	// Making an ArrayList of Student objects
+	public University()
+	{
+		uni = new ArrayList<Student>();
+	}
+
+	// Add
+	// Add Student object
+	public void addStudent(Student studentToAdd)
+	{
+		uni.add(studentToAdd);
+	}
+
+	public int getSize()
+	{
+		return uni.size();
+	}
+	
+	// Printing out the arrayList
+	public void printUni()
+	{
+		for(int i = 0 ; i < uni.size() ; i++)
+		{
+			System.out.println(uni.get(i));
+		}
+	}
+}
